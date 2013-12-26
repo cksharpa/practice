@@ -1,14 +1,14 @@
 <?php
 //connecting database
-$dbhost = '192.168.0.32';
-$dbuser = 'avuser';
-$dbpass = 'srmri@12345';
+$dbhost = 'localhost';
+$dbuser = 'mydb';
+$dbpass = '123';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 if(! $conn )
 {
   die('Could not connect: ' . mysql_error());
 }
-$db = mysql_select_db('db_atihav');
+$db = mysql_select_db('db_user');
 
 //collect data from QandQ table;
 //$sql = 'SELECT id, user_id, AFactor, datetime FROM QandQ';
